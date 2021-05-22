@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css"/>
+<html>
+  <body>
+    <div class="row">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <h1><center>MY SMART FARMING</center></h1>
+      <div class="tag">
+        <button onclick="function_nha1()">Nha1</button>
+        <button onclick="function_nha2()">Nha2</button>
+        <button onclick="function_nha3()">Nha3</button>
+        <button onclick="function_nha4()">Nha4</button>
+      </div>
+      <div class = "gu" id="gu">
+        <div id="da1">
+            <h2><img src="humi.png" id="da"></h2>
+            <h5>Dộ Ẩm</h5>
+            <h8></h8>
+        </div>
+        <div id="nd1">
+            <h6><img src="E:\IOT_smartfarming\nhiet_do1.png" id="nd"></h6>
+            <h4>NHIỆT ĐỘ</h4>
+            <h9></h9>
+        </div>
+        <div id="ds1">
+            <h7><img src="E:\IOT_smartfarming\den_2.png" id="ds"></h7>
+            <h3>ĐỘ SÁNG</h3>
+            <h10></h10>
+        </div>
+        <div class="thongso">
+          <h1 id="nhietdo"></h1>
+          <h1 id="doam"></h1>
+          <h1 id="dosang"></h1>
+        </div>
+      </div>
+    </div>
+    <div class="cherry">
+      <div class="tom">
+        <h1><center><img src="img/quat.gif" id="quat_1"></center>
+            <button type="button" id="btn1" class="btn1">On</button>
+            <button type="button" id="btn2" class="btn2">Off</button><br><br>
+        </h1>
+        <h1><center><img src="img/tuoi_cay.gif" id="tuoi_cay"></center>
+            <button type="button" id="btn3" class="btn3">On</button>
+            <button type="button" id="btn4" class="btn4">Off</button><br><br>
+        </h1>
+        <h1><center><img src="img/den.gif" id="LED_1"></center>
+            <button type="button" id="btn5" class="btn5">On</button>
+            <button type="button" id="btn6" class="btn6">Off</button><br><br>
+        </h1>
+      </div>
+    </div>
+<h1 id="dosang"></h1>
+<script src="function.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBgA6M0WUtgBmus_skHeYWl7VJ5BP60zb4",
+    authDomain: "myfarm-f6cfb.firebaseapp.com",
+    databaseURL: "https://myfarm-f6cfb-default-rtdb.firebaseio.com",
+    projectId: "myfarm-f6cfb",
+    storageBucket: "myfarm-f6cfb.appspot.com",
+    messagingSenderId: "442822408433",
+    appId: "1:442822408433:web:0004a872e7874f313f1150",
+    measurementId: "G-596CCNCEW0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+  //functions
+  var nhietDo = document.getElementById('nhietdo');
+  var dbRef = firebase.database().ref().child('Nhiet do');
+  
+  var doAm = document.getElementById('doam');
+  var dbRef2 = firebase.database().ref().child('Do am');
+ 
+  var doSang = document.getElementById('dosang');
+  var dbRef3 = firebase.database().ref().child('Do sang');
+ 
+  var nhietDo_nha2 = document.getElementById('nhietdo');
+  var dbRef4 = firebase.database().ref().child('Nhiet do nha 2');
+  
+  var doAm_nha2 = document.getElementById('doam');
+  var dbRef5 = firebase.database().ref().child('Do am nha 2');
+  
+  var doSang_nha2 = document.getElementById('dosang');
+  var dbRef6 = firebase.database().ref().child('Do sang nha 2');
+
+  var nhietDo_nha3 = document.getElementById('nhietdo');
+  var dbRef7 = firebase.database().ref().child('Nhiet do nha 3');
+  
+  var doAm_nha3 = document.getElementById('doam');
+  var dbRef8 = firebase.database().ref().child('Do am nha 3');
+  
+  var doSang_nha3 = document.getElementById('dosang');
+  var dbRef9 = firebase.database().ref().child('Do sang nha 3');
+
+  var nhietDo_nha4 = document.getElementById('nhietdo');
+  var dbRef10 = firebase.database().ref().child('Nhiet do nha 4');
+  
+  var doAm_nha4 = document.getElementById('doam');
+  var dbRef11 = firebase.database().ref().child('Do am nha 4');
+  
+  var doSang_nha4 = document.getElementById('dosang');
+  var dbRef12 = firebase.database().ref().child('Do sang nha 4');
+  
+  dbRef.on('value', snap => nhietDo.innerText = snap.val());
+  dbRef2.on('value', snap => doAm.innerText = snap.val());
+  dbRef3.on('value', snap => doSang.innerText = snap.val());
+</script>
+<script>
+  function function_nha1(){
+    dbRef.on('value', snap => nhietDo.innerText = snap.val());
+    dbRef2.on('value', snap => doAm.innerText = snap.val());
+    dbRef3.on('value', snap => doSang.innerText = snap.val());
+  }
+</script>
+<script>
+  function function_nha2(){
+    dbRef4.on('value', snap => nhietDo_nha2.innerText = snap.val());
+    dbRef5.on('value', snap => doAm_nha2.innerText = snap.val());
+    dbRef6.on('value', snap => doSang_nha2.innerText = snap.val());
+  }
+</script>
+<script>
+  function function_nha3(){
+    dbRef7.on('value', snap => nhietDo_nha3.innerText = snap.val());
+    dbRef8.on('value', snap => doAm_nha3.innerText = snap.val());
+    dbRef9.on('value', snap => doSang_nha3.innerText = snap.val());
+  }
+</script>
+<script>
+  function function_nha4(){
+    dbRef10.on('value', snap => nhietDo_nha4.innerText = snap.val());
+    dbRef11.on('value', snap => doAm_nha4.innerText = snap.val());
+    dbRef12.on('value', snap => doSang_nha4.innerText = snap.val());
+  }
+</script>
+</body>
+</html>

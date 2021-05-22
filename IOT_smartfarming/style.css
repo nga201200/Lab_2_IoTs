@@ -1,0 +1,224 @@
+.row
+{
+    background-image:url("nong_trai2.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row h1
+{
+    background-color: #F5D0A9;
+    width:50%;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+.tag
+{
+    width:100%;
+    height:60px;
+    background-color:#F8E6E0;
+    
+}
+.tag button
+{
+    width: 10%  ;
+    height:60px;
+    background-color:#F5BCA9;
+   margin-left:10% ;
+   margin-right:2%;
+  
+}
+.gu h1
+{
+    width: 20%  ;
+    height:200px;
+    background-color:#F6CECE;
+   margin-left:10% ;
+   margin-right:2%;
+   display:inline-block;
+}
+.cherry
+{
+    background-color:#F8E0E0;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.tom h1 {
+    width: 415px;
+    height: 280px;
+    background-color: #58FAF4;
+    display: inline-block;
+    border-style: inset;
+    margin-left: 4%;
+}
+.tom h1 h2
+{
+    width:100%;
+    height:40%;
+    background-color: beige; 
+}
+button 
+{
+    width: 80px;
+    height: 40px;
+    margin-left: 20%;
+    font-size: x-large;
+    font-family: revert;
+    margin-right: auto;
+}
+h2 
+{
+    margin-top: 17%;
+    margin-right: 40%;
+}
+h3 
+{
+    margin-right: 40%;
+    width: 120px;
+    height: 30px;
+    background-color: pink;
+    font-size: x-large;
+    margin-left: 42%;
+}
+h4 
+{
+    font-size: x-large;
+    width: 120px;
+    height: 30px;
+    background-color: pink;
+    margin-left: 60%;
+}
+h5 
+{
+    font-size: x-large;
+    width: 120px;
+    height: 30px;
+    margin-top: 0;
+    margin-left: 30%;
+    background-color: pink;
+}
+h6 
+{
+    margin-top: 15%;
+    margin-right: 15%;
+}
+h7 
+{
+    font-size: x-large;
+    width: 120px;
+    height: 30px;
+    margin-top: 0;
+    margin-left: 30%;
+}
+div#gu 
+{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+div#da1 
+{
+    width: 410px;
+    height: 120px;
+    float: left;
+}
+div#nd1 
+{
+    width: 410px;
+    height: 120px;
+    float: left;
+}
+div#ds1 
+{
+    width: 432px;
+    height: 120px;
+    float: right;
+}
+img#da 
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 50%;
+}
+img#nd
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 70%;
+    margin-top: 3%;
+}
+img#ds 
+{
+    width: 120px;
+    height: 120px;
+    margin-top: 15%;
+    margin-right: 19%;
+}
+.thongso
+{
+    width: 90%;
+    height: 20%;
+    position: relative;
+    top:50%;
+    margin-left:10px ;
+}
+#nhietdo
+{
+    width: 9%;
+    height: 150%;
+    position: relative;
+    top: 300%;
+    left: 19.4%;
+}
+#doam
+{
+    width: 9%;
+    height: 150%;
+    position: relative;
+    top: 300%;
+    left: -41%;
+}
+#dosang
+{
+    width: 9%;
+    height: 150%;
+    top: 300%;
+    left: 21%;
+}
+.lightStatus
+{
+    margin-top: 40%;
+    color: white;
+    font-family: Verdana;
+}
+.lightButton
+{
+    font-size: 1.5em;
+    font-family: Verdana;
+    padding: 10px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
